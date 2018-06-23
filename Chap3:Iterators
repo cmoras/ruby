@@ -1,0 +1,29 @@
+five_me.each do |cool|
+	puts cool
+end
+
+this ais an example for loop
+
+
+
+
+grocery_items ={"oranges" => false, "apples" => false}
+puts "wddau need?"
+grocery_items.each do | item, need_for item |
+	puts item + "? (Y/N)"
+	case gets
+		when "Y/y"
+			grocery_items[item] = true
+		when "N/n"
+			grocery_items[item] = false
+	end
+end
+puts "here's your list:"
+grocery_items.each do | item, need_for_item |
+	puts item if need_for_item
+end
+
+
+## i think this is wrong , need to be tested
+grocery_items[item] = true should actually be 
+grocery_items[need_for_item] = true

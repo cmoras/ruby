@@ -1,0 +1,80 @@
+Conditionals:
+-------------
+
+for instance :
+
+
+irb(main):032:0> myar = 10
+=> 10
+irb(main):033:0> if myar > 9 
+irb(main):034:1> puts myar
+irb(main):035:1> end
+10
+=> nil
+irb(main):036:0> if myar > 90
+irb(main):037:1> puts myar
+irb(main):038:1> end
+=> nil
+irb(main):039:0> 
+
+
+extended conditonals:
+---------------------
+if myar > 10
+	....
+elsif myar  < 10
+	....
+else
+	....
+end
+
+
+
+code reduction:
+--------------
+
+puts "big" if myar > 10
+
+puts "small" unless myarr > 10 [this will the negated version]
+
+myar > 10 ? puts("big") : puts("small")
+
+
+
+hwo to get a value from user and then performa manipulatiosn on that  
+
+
+puts "gimme an integer"
+num = gets.to_i
+
+if num > 10
+	num1 = num * num
+	puts num1
+elsif num < 10
+	num1 = num * 2 
+	puts num1
+else num = 10
+	num1 = num * 2  
+        puts num1
+end
+
+
+
+
+
+test :
+
+to test whether the user has a phone on the desk 
+
+
+puts "Hello"
+puts "Do you have a phone"
+
+case gets
+	when "Y/y"
+		phone =  true
+	when "N/n"
+		phone = false 
+end
+
+puts "phone there" if phone 

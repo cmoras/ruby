@@ -1,0 +1,96 @@
+hello.rb
+--------
+puts "hello world"
+
+puts is a method
+
+"..."  argmnet
+
+
+what is a method?
+-----------------
+a quick way to encapsulate code, so that can be used throughout the code
+
+what is argiument?
+------------------
+data that is passed to the method
+
+sytax:
+------
+method name + argumnets (comma separated)
+
+enduser@ibdlsoclenmo:~/git/bash$ irb 
+irb(main):001:0> puts "hello world"
+hello world
+=> nil
+irb(main):002:0> puts("hello World")
+hello World
+=> nil
+irb(main):003:0> 
+
+
+nil here means nothing is returned
+
+===================================================================================================
+
+Variables:
+----------
+
+give it a name  = some number 
+
+num = 100
+@num1 = 1000
+num2 = "hello worlsdd"
+
+
+rules:
+always start with lowercase
+can have "_"
+avoid keyword
+
+
+to call a variable we can just use 
+puts num
+or 
+puts num2
+
+
+Ruby automaticaylly detemines what type a varialble is 
+
+
+how to create an array?
+----------------------
+
+arr1 = [1,2,3]
+empty array------> arra = []
+
+
+what is hash?
+-------------
+its more of a key value pair
+
+
+example hash 
+
+irb(main):013:0> ha = {"simple" => "clen", "num" => 4}
+=> {"simple"=>"clen", "num"=>4}
+irb(main):014:0> ha["num"]
+=> 4
+irb(main):015:0> 
+
+empty hash = {}
+
+connecting a hash to an array:
+-----------------------------
+
+irb(main):026:0> arr = ["4","black"]
+=> ["4", "black"]
+irb(main):027:0> arr
+=> ["4", "black"]
+irb(main):028:0> arr1  = {}
+=> {}
+irb(main):029:0> arr1["num"] = arr[0] 
+=> "4"
+irb(main):030:0> 
+
+
