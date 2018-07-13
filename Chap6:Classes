@@ -1,0 +1,61 @@
+As an object oriented programming language, Ruby uses the concepts of class and object.
+
+“Class” is a way to define objects. In the real world there are many objects of the same type. Like vehicles, dogs, bikes. 
+Each vehicle has similar components (wheels, doors, engine). “Objects” have two main characteristics: data and behavior. 
+Vehicles have data like number of wheels and number of doors. They also have behavior like accelerating and stopping.
+
+In object oriented programming we call data “attributes” and behavior “methods.”
+
+Data = Attributes
+Behavior = Methods
+
+
+Basic of what i have understood so far:
+we need
+--a function for initializing the vars
+--the vars that have been recieved from the object to the init def, need to be assigned to the class var.
+--separate function definition for the tasks
+--calling a object, you can give values that you need set, which is the general way of working with classes
+--if that is the case, initialize def has o have a way to take those values
+--for the output we need we need to call the function that actually gives the output
+for instace 
+tesla.printout
+or
+tesla.function_name
+
+for example 
+----------------------------------------------------
+#!/usr/share/rvm/rubies/ruby-2.4.1/bin/ruby
+
+class Tes
+        def initialize(length)
+                @length = length
+        end
+
+        def printout
+                puts "length = #{@length}"
+        end
+end
+
+tesla = Tes.new(10)
+
+puts tesla.printout
+
+---------------------------------------------
+
+#!/usr/share/rvm/rubies/ruby-2.4.1/bin/ruby
+
+class Tes
+	def initialize
+		@length = 10
+	end
+	
+	def printout
+		puts "length = #{@length}"
+	end
+end
+
+tesla = Tes.new
+
+puts tesla.printout
+

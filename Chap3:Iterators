@@ -1,3 +1,8 @@
+The main iteration that is used is each keyword. aside form this, while and for are also used.
+
+each:
+------
+
 five_me.each do |cool|
 	puts cool
 end
@@ -5,7 +10,36 @@ end
 this ais an example for loop
 
 
+2.4.1 :008 > a
+ => {"a"=>"1", "b"=>"2"} 
+2.4.1 :009 > a.each do |loop, noop|
+2.4.1 :010 >     puts "#{loop}: #{noop}"
+2.4.1 :011?>   end
+a: 1
+b: 2
+ => {"a"=>"1", "b"=>"2"} 
 
+
+
+a hash output by selectively based on only the value/key
+--------------------------------------------------------
+
+#!/usr/share/rvm/rubies/ruby-2.4.1/bin/ruby
+
+a={"a"=>"1", "b"=>"2", "c"=>"1"}
+
+puts a
+
+puts "now lwts start punking with this"
+
+a.each do |loop, noop|
+	if noop == "1"
+		puts "#{loop}: #{noop}"
+	end
+end
+
+another output with case
+-------------------------
 
 grocery_items ={"oranges" => false, "apples" => false}
 puts "wddau need?"

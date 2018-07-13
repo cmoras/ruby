@@ -1,0 +1,20 @@
+Hash:Key Value pair
+-------------------
+
+Formatting is more or les simlar to array  however you ned to specify what the key and value pair is 
+ for instace
+
+a=[1,2,3,4] is an array
+a={"a"=>"1", "b"=>"2"}
+then the output would be 
+
+2.4.1 :054 >   a[a]
+ => nil 
+2.4.1 :055 > a["a"]
+ => "1" 
+2.4.1 :056 > a["b"]
+ => "2" 
+2.4.1 :057 > 
+
+
+
