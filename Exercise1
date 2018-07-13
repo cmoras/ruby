@@ -1,0 +1,42 @@
+Lets create a sample program that will print out either
+
+1, 2, 3 
+or 
+
+one, two, three
+1) Create a file called counting.rb
+
+2) Inside the file define an array consisting of the numbers 1 - 3.
+
+3) define another array consisting of the numbers written out as strings.
+
+4) Instruct the user to type in either 1 or one.
+
+5) Use gets to get the user input. (Hint: call .strip! on your user input string to remove the new line, \n character)
+
+6) If the user typed 1, output the three elements of the first array. If the user typed one, then output the elements of the second array.
+
+7) Run your program to test it.
+
+
+
+
+
+answer:
+#!/home/clen.mo/.rvm/rubies/ruby-2.5.1/bin/ruby
+
+a=[1, 2, 3]
+a1=["one","two","three"]
+
+
+
+puts "Please type in either one or 1"
+
+b=gets.strip
+
+if b == "1"
+	print a[1]
+else
+	print a1[1]
+end
+
